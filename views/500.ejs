@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>404 - Lego Collection</title>
+  </head>
+  <body>
+    <nav><%- include('partials/navbar', {page: '/500'}) %> </nav>
+    <div class="container mx-auto mt-8">
+      <!-- Hero Component -->
+      <div class="text-center">
+        <div class="hero-headline"> Oops! Page Not Found. </div>
+        <p class="mt-3"><%= message || "Database Error!!!" %> </p>
+        <br>
+        <a href="/">
+          <button class="btn btn-primary"> HOME </button>
+        </a>
+      </div>
+  </body>
+</html>

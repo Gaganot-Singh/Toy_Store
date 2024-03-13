@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Lego Collection</title>
+    <title>Toy Store</title>
 </head>
 
 <body>
@@ -19,14 +19,13 @@
           <div class="hero-content text-center ">
             <div class="max-w-md">
               <h1 class="text-5xl font-bold">WELCOME</h1>
-              <p class="py-6">Unleash your inner builder and embark on a fascinating journey through the colorful realm of Lego.</p>
               <a href="/lego/sets" class="btn btn-primary">GET STARTED NOW</a>
             </div>
         </div>
     </div>
 
     <script>
-        fetch('/lego/sets')  // Replace with the actual path to your JSON file
+        fetch('/lego/sets')  
             .then(response => response.json())
             .then(data => {
                 console.log(data); 
